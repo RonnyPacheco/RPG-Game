@@ -30,6 +30,8 @@ while running:
 	print("The enemy attack for", enemy_dmg, "points of damage. Player Hp:", player.get_hp())
 
 
+print("end")
+
 
 
 
