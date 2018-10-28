@@ -43,6 +43,47 @@ class Person:
 			self.current_hp = 0
 		return self.current_hp
 
+	def get_hp(self):
+		return self.current_hp
+
+	def get_max_hp(self):
+		return self.max_hp
+
+	def get_mp(self):
+		return self.current_mp
+
+	def get_max_mp(self):
+		return self.max_mp
+
+	def reduce_mp(self, cost):
+		self.current_mp -= cost
+
+	def get_spell_name(self, index):
+		return self.magic[index]["name"]
+
+	def get_spell_cost(self, index):
+		return self.magic[index]["cost"]
+
+	def pick_action(self):
+		i = 1
+		print("Actions")
+		for item in self.actions:
+			print(str(i) + ":", item)
+			i += 1
+
+	def choose_magic(self):
+		i = 1
+		print("Magic")
+		for spell in self.magic:
+			print(str(i) + ":", spell["name"], "(Cost:", str(spell["cost"]) + ")")
+
+
+
+
+
+
+
+
 
 
 
